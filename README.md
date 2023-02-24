@@ -1,18 +1,28 @@
-# Furniture Classification
+# 🪑 Furniture Classification
 
-This repository contains the code for a furniture classification project, which aims to differentiate between three different types of furniture: bed, chair, and sofa. The purpose of this project is to provide a reliable and accurate method for classifying furniture images using deep learning techniques.
+This repository contains the code for a furniture classification project, which aims to differentiate between three different types of furniture: 🛏️ bed, 🪑 chair, and 🛋️ sofa. The purpose of this project is to provide a reliable and accurate method for classifying furniture images using deep learning techniques.
 
-## Dataset
+# Table of Contents
 
-The dataset used in this project contains 300 images of furniture, with 100 images per class (bed, chair, and sofa). We split the dataset into a training set and a validation set. We used 80% of the images for training and the remaining 20% for validation. To ensure that the model generalizes well and to prevent overfitting, we applied data augmentation techniques such as rotation and flipping.
+- [Dataset](#Dataset)
+- [Result](#Result)
+- [API](#API)
+- [Requirements](#Requirements)
+- [Usage](#Usage)
+- [License](#License)
+- [Author](#Author)
 
-## Result
+## 📊 Dataset
+
+The dataset used in this project contains 300 images of furniture, with 100 images per class (🛏️ bed, 🪑 chair, and 🛋️ sofa). We split the dataset into a training set and a validation set. We used 80% of the images for training and the remaining 20% for validation. To ensure that the model generalizes well and to prevent overfitting, we applied data augmentation techniques such as rotation and flipping.
+
+## 📈 Result
 
 In this project, we used convolutional neural networks (CNNs) for furniture classification and experimented with different model architectures, including ResNet, VGG, and Transformers. To optimize the models, we used the cross-entropy loss function and the Adam optimizer. We trained the models for 20 epochs and used early stopping to prevent overfitting. Note that since the number of samples within the dataset is limited, only the fully connected part of the networks are optimized.
 
 The following table presents the classification performance of several deep learning models on the validation data. The performance is evaluated based on several metrics, including bed accuracy, chair accuracy, sofa accuracy, Kappa, F1 score, area under the receiver operating characteristic curve (AUC), and balanced accuracy.
 
-| Model       | Bed Acc. | Chair Acc. | Sofa Acc. | Kappa   | F1 Score | AUC     | Balanced Acc. |
+| Model       | 🛏️ Bed Acc. | 🪑 Chair Acc. | 🛋️ Sofa Acc. | Kappa   | F1 Score | AUC     | Balanced Acc. |
 |-------------|----------|------------|-----------|---------|----------|---------|---------------|
 | ResNet18    | 90.00%   | 95.00%     | 90.00%    | 0.8750   | 0.9170  | 0.9787        | 91.67%        |
 | ResNet34    | 100.00%  | 90.00%     | 100.00%   | 0.9500   | 0.9666  | 0.9933        | 96.67%        |
